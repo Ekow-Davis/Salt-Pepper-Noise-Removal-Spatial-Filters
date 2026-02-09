@@ -64,18 +64,33 @@ Metrics are computed between the denoised image and the original clean image.
 ---
 
 ## Folder Structure
-noise_removal/
+```
+salt_pepper_noise_removal/
+│
+├── requirements.txt
+├── README.md
 │
 ├── data/
-│   ├── clean/
+│   ├── original/
+│   │   ├── grayscale/
+│   │   └── colored/
+│   │
 │   ├── noisy/
-│   └── results/
-│       ├── baseline/
+│   │   ├── grayscale/
+│   │   └── colored/
+│   │
+│   └── clean/
+│       ├── median/
+│       │   ├── grayscale/
+│       │   └── colored/
+│       │
 │       ├── cnn/
-│       └── paper/
-│
-├── metrics/
-│   ├── psnr_ssim.py
+│       │   ├── grayscale/
+│       │   └── colored/
+│       │
+│       └── adaptive/
+│           ├── grayscale/
+│           └── colored/
 │
 ├── baseline/
 │   └── median_filter.py
@@ -86,12 +101,15 @@ noise_removal/
 │   ├── train.py
 │   └── infer.py
 │
-├── paper_method/
+├── paper-method/
 │   └── adaptive_filter.py
 │
-└── add_noise.py
-
-
+├── utils/
+│   ├── add_noise.py
+│   └── metrics.py
+│
+└── run_experiment.py
+```
 
 ---
 

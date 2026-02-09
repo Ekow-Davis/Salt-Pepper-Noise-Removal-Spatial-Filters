@@ -1,0 +1,12 @@
+# Core
+numpy<2.0
+opencv-python>=4.8.0
+tqdm>=4.66.0
+
+# Metrics
+scikit-image>=0.21.0
+pandas>=2.0.0
+
+# Deep Learning (CPU)
+torch==2.0.1
+torchvision==0.15.2
