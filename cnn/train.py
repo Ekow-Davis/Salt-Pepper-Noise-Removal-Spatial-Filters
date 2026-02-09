@@ -1,12 +1,17 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import torch
 from torch.utils.data import DataLoader
 from model import SimpleDenoiser
 from dataset import NoisyImageDataset
 
 CLEAN_DIR = "data/original/colored"
-NOISY_DIR = "data/noisy/colored"
+NOISE_LEVEL = 0.3
 
-dataset = NoisyImageDataset(CLEAN_DIR, NOISY_DIR)
+dataset = NoisyImageDataset(CLEAN_DIR, noise_level=NOISE_LEVEL)
 loader = DataLoader(dataset, batch_size=4, shuffle=True)
 
 model = SimpleDenoiser()

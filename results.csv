@@ -1,0 +1,13 @@
+Image,Mode,Method,PSNR,SSIM
+grayscale_img1.jpeg,grayscale,Median,17.771489209189156,0.3441842603307335
+grayscale_img1.jpeg,grayscale,Adaptive,39.19569159535986,0.9720839121800847
+hulki-okan-tabak-eY9wnVZOIWg-unsplash.jpg,grayscale,Median,16.024434094384958,0.4898411672592561
+hulki-okan-tabak-eY9wnVZOIWg-unsplash.jpg,grayscale,Adaptive,24.92756249114578,0.9170332233067731
+sam-te-kiefte-O5lhqmu3I4A-unsplash.jpg,grayscale,Median,17.542554606006547,0.38941730219212256
+sam-te-kiefte-O5lhqmu3I4A-unsplash.jpg,grayscale,Adaptive,27.341282114930824,0.9155234824286792
+coloured_img1.jpg,colored,Median,15.793406706963376,0.34928499114021766
+coloured_img1.jpg,colored,CNN,16.133130312105145,0.1961752405745363
+coloured_img1.jpg,colored,Adaptive,26.99340185369307,0.9302731287888681
+coloured_img2.jpg,colored,Median,16.966845749654826,0.4288610210695079
+coloured_img2.jpg,colored,CNN,14.972449426169273,0.21734152503772833
+coloured_img2.jpg,colored,Adaptive,25.16533381681239,0.8560151516141813
